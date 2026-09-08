@@ -1,0 +1,19 @@
+From: Microsoft 365 Support <support@micr0soft-security.com>
+To: employee@technova.example
+Subject: Urgent: Your Microsoft 365 account will be suspended
+
+Hello,
+
+We detected unusual activity associated with your Microsoft 365
+account.
+
+To prevent your account from being suspended, you must verify
+your identity immediately.
+
+Verify your account:
+hxxps://login-micr0soft-security[.]example/verify
+
+Failure to complete verification within 24 hours may result in
+account suspension.
+
+Microsoft 365 Security Team

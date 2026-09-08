@@ -1,0 +1,45 @@
+MITRE ATT&CK MAPPING
+=====================
+
+Incident: Phishing Email Investigation
+
+1. T1566.002 — Phishing: Spearphishing Link
+   Description:
+   The attacker used a phishing email containing a malicious link designed
+   to redirect the victim to a fraudulent login/verification page.
+
+   Evidence:
+   - login-micr0soft-security.example/verify
+   - Suspicious sender: support@micr0soft-security.com
+
+2. T1036 — Masquerading
+   Description:
+   The attacker attempted to impersonate a legitimate Microsoft-related
+   security service by using a deceptive domain containing "micr0soft"
+   instead of "microsoft".
+
+   Evidence:
+   - micr0soft-security.com
+   - support@micr0soft-security.com
+
+3. T1056.002 — Input Capture: GUI Input Capture
+   Description:
+   The fraudulent verification page could be used to capture credentials
+   entered by the victim.
+
+   Evidence:
+   - login-micr0soft-security.example/verify
+   - Fake login/verification page referenced in the phishing email
+
+4. T1071.001 — Application Layer Protocol: Web Protocols
+   Description:
+   The phishing infrastructure uses web-based communication to direct
+   victims to the fraudulent verification page.
+
+   Evidence:
+   - login-micr0soft-security.example/verify
+
+Conclusion:
+The incident primarily maps to T1566.002 (Spearphishing Link), with
+supporting techniques related to masquerading, credential/input capture,
+and web-based communication.

@@ -1,0 +1,6 @@
+IOC Type,Indicator,Status
+Sender Domain,micr0soft-security.com,Suspicious
+Sender Address,support@micr0soft-security.com,Suspicious
+Source IP,198.51.100.27,Suspicious
+Phishing URL,hxxps://login-micr0soft-security[.]example/verify,Suspicious
+Attachment,None identified,-

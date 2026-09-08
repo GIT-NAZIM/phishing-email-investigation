@@ -1,0 +1,21 @@
+From: Microsoft 365 Support <support@micr0soft-security.com>
+To: employee@technova.example
+Subject: Urgent: Your Microsoft 365 account will be suspended
+Date: Tue, 08 Sep 2026 09:41:22 +0000
+Message-ID: <20260908094122.84217@micr0soft-security.com>
+Return-Path: <support@micr0soft-security.com>
+Reply-To: support@micr0soft-security.com>
+
+Received: from mail.micr0soft-security.com
+    (mail.micr0soft-security.com [198.51.100.27])
+    by mail.technova.example
+    with ESMTP id 7F2A91
+    for <employee@technova.example>;
+    Tue, 08 Sep 2026 09:41:24 +0000
+
+Authentication-Results: mail.technova.example;
+    spf=fail smtp.mailfrom=micr0soft-security.com;
+    dkim=fail header.d=micr0soft-security.com;
+    dmarc=fail header.from=micr0soft-security.com
+
+X-Mailer: PHPMailer

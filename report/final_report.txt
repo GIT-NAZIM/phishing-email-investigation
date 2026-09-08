@@ -1,0 +1,127 @@
+PHISHING EMAIL INVESTIGATION REPORT
+===================================
+
+1. EXECUTIVE SUMMARY
+--------------------
+
+A suspected phishing email was investigated after identifying indicators
+associated with a fraudulent Microsoft-themed security message.
+
+The investigation identified a suspicious sender domain, a suspicious IP
+address, and a fraudulent verification URL designed to potentially trick
+users into providing credentials.
+
+The incident was classified as a phishing attack involving a malicious link--
+and impersonation of a legitimate Microsoft-related service.
+
+Risk Level: HIGH
+
+
+2. INCIDENT DETAILS
+-------------------
+
+Incident Type:
+Phishing / Credential Theft
+
+Attack Vector:
+Email containing a suspicious verification link
+
+Suspected Impersonation:
+Microsoft Security
+
+Primary Objective:
+Credential theft
+
+
+3. INDICATORS OF COMPROMISE
+---------------------------
+
+Domain:
+micr0soft-security.com
+
+Email Address:
+support@micr0soft-security.com
+
+IP Address:
+198.51.100.27
+
+Suspicious URL:
+login-micr0soft-security.example/verify
+
+4. ANALYSIS
+-----------
+
+The sender domain uses "micr0soft" instead of the legitimate "microsoft",
+which is an example of deceptive domain impersonation.
+
+The email directs the recipient toward a suspicious verification page.
+The use of a login/verification page creates a potential opportunity for
+the attacker to collect user credentials.
+
+The identified indicators should therefore be treated as suspicious and
+added to appropriate security monitoring and blocking controls.
+
+
+5. MITRE ATT&CK MAPPING
+-----------------------
+
+T1566.002 — Phishing: Spearphishing Link
+
+T1036 — Masquerading
+
+T1056.002 — Input Capture: GUI Input Capture
+
+T1071.001 — Application Layer Protocol: Web Protocols
+
+
+6. INCIDENT RESPONSE
+--------------------
+
+Recommended containment actions:
+
+- Block the identified sender, domains, IP address, and URL.
+- Quarantine the phishing email from affected mailboxes.
+- Search for additional recipients of the same email.
+- Review authentication and endpoint logs for suspicious activity.
+- Reset credentials if a user submitted credentials.
+- Revoke active sessions if account compromise is suspected.
+- Monitor affected accounts for unusual authentication activity.
+
+
+7. PREVENTION
+-------------
+
+Recommended preventive controls:
+
+- Enable multi-factor authentication (MFA).
+- Strengthen email filtering.
+- Implement URL and domain reputation filtering.
+- Deploy and maintain SPF, DKIM, and DMARC.
+- Conduct regular phishing awareness training.
+- Provide a process for users to report suspicious emails.
+- Monitor authentication logs for unusual activity.
+
+
+8. CONCLUSION
+-------------
+
+The investigation identified multiple indicators consistent with a
+Microsoft-themed phishing campaign.
+
+The strongest indicator was the deceptive "micr0soft" domain and the
+associated fraudulent verification URL.
+
+The incident should be treated as a high-risk phishing attempt because the
+attack could potentially result in credential compromise.
+
+The identified indicators should be blocked and monitored, while any users
+who interacted with the phishing page should be investigated for possible
+account compromise.
+
+
+ANALYST
+-------
+
+SOC Analyst
+Phishing Email Investigation
+

@@ -1,0 +1,59 @@
+INCIDENT RESPONSE & RECOMMENDATIONS
+===================================
+
+Incident: Phishing Email Investigation
+
+1. CONTAINMENT
+--------------
+- Block the malicious sender email address.
+- Block the suspicious domains and URLs identified in the IOC list.
+- Prevent users from accessing the phishing URL through web filtering.
+- Quarantine the phishing email from affected mailboxes.
+- If credentials were entered, immediately disable or reset the affected account.
+
+2. INVESTIGATION
+----------------
+- Review email headers to identify the source and delivery path.
+- Search the environment for other users who received the same email.
+- Check DNS, proxy, firewall, and endpoint logs for connections to the
+  identified indicators.
+- Determine whether any users clicked the malicious link.
+- Check for suspicious authentication activity following the phishing attempt.
+
+3. ERADICATION
+--------------
+- Remove all copies of the phishing email from mailboxes.
+- Block identified malicious indicators across security controls.
+- Remove any malicious files or browser artifacts associated with the incident.
+- Reset compromised credentials if necessary.
+- Revoke active sessions and tokens if an account was compromised.
+
+4. RECOVERY
+-----------
+- Restore affected accounts to a secure state.
+- Monitor affected accounts for suspicious login activity.
+- Continue monitoring the identified indicators for further activity.
+- Confirm that security controls are successfully blocking the malicious
+  domains and URLs.
+
+5. PREVENTION
+-------------
+- Enable and enforce multi-factor authentication (MFA).
+- Strengthen email filtering and anti-phishing controls.
+- Implement URL and domain reputation filtering.
+- Provide regular phishing awareness training to employees.
+- Encourage users to report suspicious emails to the SOC/security team.
+- Use DMARC, SPF, and DKIM to reduce email spoofing.
+
+SOC ANALYST RECOMMENDATION
+==========================
+
+The primary indicators identified during this investigation should be added
+to the organization's security monitoring and blocking controls.
+
+The incident should be monitored for additional affected users, credential
+compromise, and suspicious authentication activity.
+
+If credentials were submitted to the fraudulent website, the affected
+credentials should be reset immediately and active sessions should be
+revoked.
