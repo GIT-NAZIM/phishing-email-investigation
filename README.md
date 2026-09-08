@@ -114,42 +114,48 @@ The use of the visually deceptive `micr0soft` domain was identified as an impers
 
 ## Evidence
 
-Screenshots documenting the investigation are stored in:
-
-```text
-evidence/screenshots/
-```
+Investigation evidence and screenshots are stored in the `Evidence/` directory.
 
 Evidence includes:
 
-1. IOC analysis
-2. MITRE ATT&CK mapping
-3. Incident response recommendations
-4. Final investigation report
+1. Email header analysis
+2. Phishing email body analysis
+3. VirusTotal domain analysis
+4. IOC analysis
+5. MITRE ATT&CK mapping
+6. Incident response recommendations
+7. Final investigation report
 
 ---
 
 ## Project Structure
 
 ```text
-Phishing Email Investigation/
+Phishing-Email-Investigation/
 │
 ├── README.md
 │
-├── analysis/
-│   ├── analysis.txt
+├── Analysis/
+│   ├── incident_response.txt
 │   ├── mitre_mapping.txt
-│   └── incident_response.txt
+│   ├── threat-intelligence.md
+│   └── url-analysis.md
 │
-├── evidence/
+├── Evidence/
+│   ├── 01-email-header-analysis.png
+│   ├── 02-phishing-email-body.png
+│   ├── 03-virustotal-domain-search.png
+│   ├── email-body.txt
+│   ├── email-headers.txt
 │   └── screenshots/
 │       ├── 01_ioc_analysis.png
 │       ├── 02_mitre_mapping.png
 │       ├── 03_incident_response.png
-│       └── 04_final_report.png
+│       ├── 04_final_report(01).png
+│       └── 04_final_report(02).png
 │
 ├── iocs/
-│   └── iocs.txt
+│   └── ioc-list.txt
 │
 └── report/
     └── final_report.txt
