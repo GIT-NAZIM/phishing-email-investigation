@@ -161,8 +161,6 @@ Phishing-Email-Investigation/
     └── final_report.txt
 ```
 
----
-
 ## Skills Demonstrated
 
 * Phishing Email Analysis
