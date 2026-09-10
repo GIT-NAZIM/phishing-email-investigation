@@ -56,6 +56,15 @@ The use of the visually deceptive `micr0soft` domain was identified as an impers
 **Important:** `198.51.100.27` belongs to a documentation/example IP range and is included only for simulation purposes.
 
 ---
+## Key Findings
+
+The investigation identified multiple indicators consistent with a simulated phishing campaign:
+
+- A Microsoft-themed lookalike domain was used to impersonate a legitimate security service.
+- The email contained a suspicious authentication link designed to direct users to a fraudulent login page.
+- The identified URL represented a potential credential-harvesting mechanism.
+- The activity was mapped to relevant MITRE ATT&CK techniques associated with phishing, masquerading, and input capture.
+- Appropriate containment, eradication, recovery, and prevention actions were identified.
 
 ## MITRE ATT&CK Mapping
 
