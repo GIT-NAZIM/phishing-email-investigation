@@ -1,4 +1,4 @@
-# Phishing Email Investigation
+# # 📧 Phishing Email Investigation — SOC L1 Case Study
 
 ## Overview
 
@@ -72,7 +72,7 @@ The investigation identified multiple indicators consistent with a simulated phi
 | --------- | ----------------------------------------- | ------------------------------------------------------------ |
 | T1566.002 | Phishing: Spearphishing Link              | Malicious link delivered through phishing email              |
 | T1036     | Masquerading                              | Deceptive Microsoft-themed domain                            |
-| T1056.002 | Input Capture: GUI Input Capture          | Potential credential capture through a fraudulent login page |
+| T1056.002 | Input Capture: GUI Input Capture          | Potential credential capture through the simulated fraudulent|                                                               login page       
 | T1071.001 | Application Layer Protocol: Web Protocols | Web-based communication with the fraudulent page             |
 
 ---
@@ -169,7 +169,15 @@ Phishing-Email-Investigation/
 └── report/
     └── final_report.txt
 ```
+## Tools & Technologies
 
+- Email Header Analysis
+- VirusTotal
+- IOC Analysis
+- URL/Domain Analysis
+- MITRE ATT&CK
+- Markdown / GitHub
+  
 ## Skills Demonstrated
 
 * Phishing Email Analysis
